@@ -1,0 +1,64 @@
+es_housepost_1 table
+                                   Table "public.es_housepost_1"
+     Column     |            Type             |                     Modifiers
+----------------+-----------------------------+----------------------------------------------------
+ house_id       | character varying(100)      | not null
+ person_id      | character varying(100)      |
+ hsnumber       | character varying(50)       |
+ postcode       | character varying(20)       |
+ city           | character varying(50)       |
+ housetype      | character varying(50)       |
+ furnishedstate | character varying(20)       |
+ rent_amnt      | numeric                     |
+ inclusiveflag  | character varying(20)       |
+ duration       | character varying(20)       |
+ image          | text                        |
+ housedesc      | character varying(200)      |
+ created_dt     | timestamp without time zone | default ('now'::text)::timestamp without time zone
+ created_by     | character varying(20)       |
+ gender         | character varying(100)      |
+ veg_nonveg     | character varying(100)      |
+ roomtype       | character varying(100)      |
+ pplallowedmax  | character varying(100)      |
+ pplstaying     | character varying(100)      |
+ noofrooms      | character varying(100)      |
+ housestyle     | character varying(100)      |
+ enddate        | character varying(100)      |
+ startdate      | character varying(100)      |
+Indexes:
+    "es_housepost_1_pkey" PRIMARY KEY, btree (house_id)
+Foreign-key constraints:
+    "es_housepost_1_person_id_fkey" FOREIGN KEY (person_id) REFERENCES es_person_1(person_id)
+
+es_housepost_1 table
+                                   Table "public.es_housepost_1"
+     Column     |            Type             |                     Modifiers
+----------------+-----------------------------+----------------------------------------------------
+ house_id       | character varying(100)      | not null
+ person_id      | character varying(100)      |
+ hsnumber       | character varying(50)       |
+ postcode       | character varying(20)       |
+ city           | character varying(50)       |
+ housetype      | character varying(50)       |
+ furnishedstate | character varying(20)       |
+ rent_amnt      | numeric                     |
+ inclusiveflag  | character varying(20)       |
+ duration       | character varying(20)       |
+ image          | text                        |
+ housedesc      | character varying(200)      |
+ created_dt     | timestamp without time zone | default ('now'::text)::timestamp without time zone
+ created_by     | character varying(20)       |
+ gender         | character varying(100)      |
+ veg_nonveg     | character varying(100)      |
+ roomtype       | character varying(100)      |
+ pplallowedmax  | character varying(100)      |
+ pplstaying     | character varying(100)      |
+ noofrooms      | character varying(100)      |
+ housestyle     | character varying(100)      |
+ enddate        | character varying(100)      |
+ startdate      | character varying(100)      |
+Indexes:
+    "es_housepost_1_pkey" PRIMARY KEY, btree (house_id)
+Foreign-key constraints:
+    "es_housepost_1_person_id_fkey" FOREIGN KEY (person_id) REFERENCES es_person_1(person_id)
+
